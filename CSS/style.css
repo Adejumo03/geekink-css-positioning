@@ -1,0 +1,73 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Navbar using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh; /* Using vh unit */
+    padding: 0 5vw; /* Using vw unit */
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+}
+
+.cta-button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 2. Main Container using calc() */
+.container {
+    width: calc(100% - 40px); /* Dynamic sizing */
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+/* 3. Two-column Layout using Floats */
+.main-content {
+    float: left;
+    width: 70%;
+    background-color: #4a86e8;
+    color: white;
+    padding: 40px;
+    min-height: 300px;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    background-color: #f1f3f4;
+    padding: 40px;
+    min-height: 300px;
+}
+
+/* 4. Clearing Floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidebar ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #444;
+}
