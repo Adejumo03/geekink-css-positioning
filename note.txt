@@ -1,0 +1,5 @@
+Flexbox vs. Floats: The Navbar uses display: flex, which makes horizontal alignment effortless. The main content uses float, which requires a clearfix (or a clearing div) to prevent the parent container from collapsing.
+
+Measurement Units: I used vh (viewport height) for the navbar to ensure it scales based on the screen height, and vw for horizontal padding.
+
+Calc() Function: The container width is set to calc(100% - 40px), which ensures there is always a fixed 20px margin on both sides regardless of the screen size.
